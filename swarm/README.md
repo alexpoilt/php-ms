@@ -17,6 +17,8 @@ Lembre-se que o **swarm** fornece um DNS interno capaz de resolver as aplicaçõ
 Como o contêiner do PHP utiliza-se do `php.ini` para encontrar os outros contêineres do **memcached**, torna-se uma boa prática criar um **config** para o `php.ini` e montá-lo em todos os contêineres da aplicação.
 Utilizando um **config** é possível fazer alterações apenas neste "arquivo compartilhado", por exemplo adicionando novos contêineres do **memcached**, sem precisar criar novas imagens
 
+O arquivo `php.ini` deve ser montado dentro do contêiner da aplicação em `/etc/php7/php.ini`.
+
 ## Dados de acesso ao Banco
 
 Como os dados de acesso ao banco são sigilosos e podem ser compartilhados entre mais de uma aplicação, é uma boa prática definir esses dados de acesso dentro de um **secret** e então utilizá-lo para popular as variáveis de ambiente de cada contêiner, ou montá-lo como arquivo.
