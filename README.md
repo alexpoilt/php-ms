@@ -1,6 +1,6 @@
 # Objetivos
 
-O objetivo deste repositório é fornecer um exercício com o intuito de criar uma aplicação dependente de múltiplos contêineres. As informações relativas ao **Kubernetes** e ao **Swarm** estão em seus respectivos diretórios.
+O objetivo deste repositório é fornecer um exercício com o intuito de criar uma aplicação dependente de múltiplos contêineres. As informações relativas ao **Docker Compose**, **Kubernetes** e ao **Swarm** estão em seus respectivos diretórios.
 
 Caso deseje, as respostas estão na branch **answers**.
 
@@ -59,3 +59,10 @@ Pela facilidade de configuração recomendo que se utilize o **MySQL** versão 5
 ### Sessão - Memcached
 
 A sessão será gerenciada pelo **Memcached** sem maiores configurações desde que a aplicação consiga acessá-lo de alguma forma através da rede.
+
+### Usuários
+
+Os usuários para testar o login estão no arquivo `files/dump.sql`. Seus e-mails e senha são:
+
+- paramahansa@yogananda.in - 123
+- victor@frankenstein.co.uk - 123
