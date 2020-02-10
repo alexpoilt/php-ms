@@ -61,13 +61,11 @@ Este script executa requisições em loop no mesmo endereço, e não deve aprese
 **ha-test.yml**
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 
-# O teste está incompleto
-while true; do
-  curl localhost:8080;
-  sleep 1;
-done
+# Vai executar o curl 200 vezes com paralelismo de 10
+seq 1 200 | xargs -n1 -P10  curl "http://localhost:8080"
+
 ```
 
 ### Dicas
